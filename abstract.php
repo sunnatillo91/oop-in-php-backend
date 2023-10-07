@@ -1,12 +1,10 @@
 <?php
 
-// Inheritance
-// extends - the key word to create inheritance from class 
-// parent - child 
-// overriding - parent clasda mavjud clasni child clasda boshqa ko'rinishda yozish
-// final - bu so'z yordamida klassdan yoki metoddan boshqa meros olib bo'lmasligini belgilash mumkin
+// Abstract
+// abstract - the key word to create abstract class or method
+// from abstract class we can't create an object
 
-class Car 
+abstract class Car
 {
     // property, attribute
 
@@ -23,6 +21,8 @@ class Car
     {
         return 'driving';
     }
+
+    abstract public function start();
 
     public function getFuel()
     {
@@ -66,16 +66,16 @@ $tesla = new ElectricCar('tesla', '2023');
 $tesla->battery = '45000 mA';
 $tesla->charge();
 
-var_dump($tesla->charge());
+var_dump($tesla->charge()); 
 
 
 
 
 
-// $audi = new Car('Audi', '2020');
+$audi = new Car('Audi', '2020');
  
 // $audi->setModel('Audi-prime');
-// echo $audi->model;
+echo $audi->model;
 
 // $bmw = new Car();
 // $merc = new Car();
