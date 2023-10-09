@@ -30,6 +30,10 @@ class ElectricCar extends Car {
     {
         return $this->year;
     }
+    public function start()
+    {
+        return "Starting";
+    }
 
     public function getKm()
     {
