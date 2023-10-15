@@ -12,3 +12,5 @@ $cat2 = clone $cat;
 $cat2->name = 'Baroq';
 echo $cat->name;
 echo $cat2->name;
+
+$vegitable->name = 'potato';
