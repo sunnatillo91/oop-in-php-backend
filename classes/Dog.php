@@ -4,6 +4,8 @@
 // interface da kritilgan funksiyalar implements orqali class yaratilganda 
 // classda f-ya tanasi bilan bo'lishi shart 
 
+namespace classes;
+
 interface Animal
 {
     public function makeSound();
@@ -28,4 +30,4 @@ class Dog implements Animal
 }
 
 $domestic_animal = new Dog('Olapar');
-var_dump($domestic_animal);
+var_dump($domestic_animal->makeSound());

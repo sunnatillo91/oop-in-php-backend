@@ -1,11 +1,11 @@
 <?php
 
-// Static methods and properties - bular klasga tegishli obyektga emas
+// Static methods and properties - bular klasga tegishli, obyektga emas
 // static metodni ichida $this dan foydalanib bo'lmaydi
 
 class Cat
 {
-    public $name;
+    public static $name = ' kitten ';
     public static $weight = '25kg';
 
     public function run()
@@ -38,9 +38,9 @@ class Kitten extends Cat
 }
 
 $pet = new Cat();
-var_dump($pet->bark());
+// var_dump($pet->bark());
 
 // Agar static metod bo'lsa classdagi static metodni :: orqali chaqirib foydalanish mumkin
 
 // echo Cat::eat();
-// echo Cat::$weight;
+echo Cat::$name . 'is ' . Cat::$weight;

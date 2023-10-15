@@ -1,5 +1,7 @@
 <?php
 
+namespace App\new_car;
+
 // public
 // protected - faqatgina parent class va shu clasdan kelib chiqqan child classni ichida public funksiya yordamida ishlatish mumkin
 // private - 

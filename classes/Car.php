@@ -6,6 +6,8 @@
 // overriding - parent clasda mavjud clasni child clasda boshqa ko'rinishda yozish
 // final - bu so'z yordamida klassdan yoki metoddan boshqa meros olib bo'lmasligini belgilash mumkin
 
+namespace classes;
+
 class Car 
 {
     // property, attribute
@@ -66,7 +68,7 @@ $tesla = new ElectricCar('tesla', '2023');
 $tesla->battery = '45000 mA';
 $tesla->charge();
 
-var_dump($tesla->charge());
+// var_dump($tesla->charge());
 
 
 
