@@ -1,5 +1,7 @@
 <?php
 
+namespace classes;
+
 class Production        //class
 {
     public $product;

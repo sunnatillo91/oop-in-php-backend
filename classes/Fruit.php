@@ -1,5 +1,7 @@
 <?php
 
+namespace classes;
+
 class Fruit
 {
     public $type;

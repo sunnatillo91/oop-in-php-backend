@@ -1,5 +1,7 @@
 <?php 
 
+namespace classes;
+
 class Category
 {
     public $category_id;

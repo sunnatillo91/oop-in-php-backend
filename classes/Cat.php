@@ -1,6 +1,7 @@
 <?php
 
 // Namespace
+namespace classes;
 
 class Cat
 {

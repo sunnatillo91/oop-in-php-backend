@@ -1,16 +1,12 @@
 <?php
 
-// Clone - mavjud obyektdan yangi obyekt yaratiladi
-
-
+// getters and setters - protected va private propertylarni olib kelish va o'rnatish uchun foydalaniladi
+ 
 require_once 'autoload.php';
 
-$cat = new Cat();
-$cat->name = 'Kisa';
+$audi = new Cars();
+$audi->setModel('Audi');
+$audi->setYear('2022');
 
-$cat2 = clone $cat;
-$cat2->name = 'Baroq';
-echo $cat->name;
-echo $cat2->name;
-
-$vegitable->name = 'potato';
+echo $audi->getModel();
+echo $audi->getYear();
